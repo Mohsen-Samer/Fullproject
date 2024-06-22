@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/styles/mystyle.css">
+    <script src="/Java/myscript.js"></script>
+    <title>Blue Sky</title>
+    
+</head>
+
+<body id="main-body">
+    
+   <header>
+        <a class="logo" >Blue Sky</a>
+        <nav class="headeritems">
+            <a href="#">Home</a>
+            <a href='About'>Information</a>
+            <a href='#contact'>Contacts</a>
+            <a href='sign'>Sign-In</a>
+        </nav>
+    </header>
+    <br><br>
+    <br>
+    <section class="Home" id="Home">
+        <div class="container">
+            <form class="form-group" onsubmit="return validateBookingForm()">
+                <h1 id="h1-booking" class="text-center">
+                    <i class="fas fa-plane" id="i1"></i> Airline Booking Form
+                </h1>
+                <div id="form-booking">
+                    <div class="row1">
+                        <a href='index' type="button" id="myBookingBtn">Booking Form</a>
+                    </div>
+                    <div id="booking-input" style="margin-left: 40px;">
+                        <select name="From" id="From">
+                            <option value="From">From</option>
+                            <option value="Egypt">Egypt</option>
+                            <option value="Saudi Arabia">Saudi Arabia</option>
+                            <option value="Kuwait">Kuwait</option>
+                            <option value="Oman">Oman</option>
+                        </select>
+                        <select name="To" id="To">
+                            <option value="To">To</option>
+                            <option value="Egypt">Egypt</option>
+                            <option value="Saudi Arabia">Saudi Arabia</option>
+                            <option value="Kuwait">Kuwait</option>
+                            <option value="Oman">Oman</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label style="color: #fff;">Departure Date</label>
+                        <input type="date"  placeholder="Departure Date" id="Departure-Date">
+                        <label style="color: #fff;">Departure Time</label>
+                        <input type="time"  placeholder="Depature Time" id="Departure-time">
+                    </div>
+                    <br>
+                    <div id="input" style="margin-left: 40px;">
+                        <select  id="input-group-preffered-1" style="background-color: black;">
+                            <option value="">Preffered Airline</option>
+                            <option value="">EgyptAir</option>
+                            <option value="">Qatar Airways</option>
+                            <option value="">Emirates</option>
+                        </select>
+                        <select  id="input-group-preffered-2" style="background-color: black;">
+                            <option value="">Preffered Seating</option>
+                            <option value="">Economy Class</option>
+                            <option value="">Business Class</option>
+                            <option value="">First Class</option>
+                        </select>
+                        </div>
+                        <br>
+                        <div id="input2" style="margin-left: 40px;">
+                           <input type="number" id="input-group1" placeholder="Adult" min="0" max="99">
+                           <input type="number" id="input-group2" placeholder="Children(2-11 Years)" min="0" max="99">
+                           <input type="number" id="input-group3" placeholder="Infant(Under 2 Years)" min="0" max="99"> 
+                        </div>
+                        <br><br>
+                    <div id="input3" style="margin-left: 40px;">
+                    <span id="input-group" style="color: blue;">Select Your Fare</span>
+                    <input type="radio" id="radio-button1"  name="r" onclick="hideReturn()">
+                    <label for="input-group" style="color: #fff;">One Way</label>
+                    <input type="radio" id="radio-button2" name="r" onclick="showReturn()"checked="checked">
+                    <label for="input-group" style="color: #fff;">Round Trip</label>
+                    </div>
+                    <br>
+                    <div id="input4" style="margin-left: 40px;">
+                    <label style="color: #fff;" id="return-date-label">Return Date</label>
+                    <input type="date" id="returnDate" placeholder="Return Date">
+                    <label style="color: #fff;" id="return-time-label">Return Time</label>
+                    <input type="time" id="returnTime" placeholder="Return Time">
+                    <br><br>
+                    <input type="text" id="input-group1" placeholder="Comments(Optional)">
+                    </div>
+                    <br>
+                    <br>
+                    <input type="submit" value="Submit" id="bookingSubmit" style="margin-left: 30px;">
+                    <input type="reset" id="resetbtn" value="Clear form" ></button>
+                    <a href='sign'  class="signin-button">Please Sign In First</a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <br>
+    <br>
+    
+        <section class="contact" id="contact">
+            <div class="contact-div">
+                <h1 id="h1-contact">Connect With Us</h1>
+                <p>Feel free to connect with us; we would love that! Whether you have questions, feedback, or just want to say hello, we're here for you. Reach out anytime, and let's start a conversation.</p>
+            <div class="box-contact">
+            
+            <div class="left-box-contact">
+        <h3 id="h3-contact">Send Your Request</h3>
+        <form onsubmit="return validateContact()">
+            <div class="row-contact">
+                <div class="row-group-contact" >
+        <label id="label-contact">Name</label>
+        <input type="text" placeholder="Enter Your Name" id="input-contact" >
+        
+                </div>
+                <div class="row-group-contact" >
+                    <label id="label-contact">Phone</label>
+                    <input type="tel" inputmode="numeric"  placeholder="Enter Your Phone" id="input-contact-2" maxlength="12">
+                    
+            </div>
+            </div>
+            <form>
+                <div class="row-contact">
+                    <div class="row-group-contact" >
+            <label id="label-contact">Email</label>
+            <input type="email" placeholder="Enter Your Email" id="input-contact-3">
+            
+                    </div>
+            
+                </div>
+                <label id="label-contact">Message</label>
+                <textarea rows="5" placeholder="Enter Your Message" id="textarea-contact" style="resize: none;"></textarea>
+                <button type="submit" id="button-contact">Send</button>
+        </form>
+            </div>
+            <div class="right-box-contact">
+                <h3 id="h3-contact-right">Reach us</h3>
+                <br>
+                <label id="label-contact-right"><i class="fas fa-envelope"></i>  Email: Project1@gmail.com</label>
+
+        
+        <br>
+        <br>
+        <label id="label-contact-right"><i class="fa-solid fa-phone"></i>  Phone: +20-268-44-712</label>
+        <br>
+        <br>
+        <label id="label-contact-right"><i class="fa-solid fa-location-dot"></i>  Address: El-Obour Bldgs. 110 Salah Salem Rd., NASR CITY</label>
+            </div>
+        
+        </div>
+        </div>
+             </section>
+             <script>
+                var imageSources = ["../photos/kevin-hackert-jO42qNF3DIQ-unsplash.jpg", "../photos/kevin-hackert-jO42qNF3DIQ-unsplash.jpg", "../photos/vecteezy_ai-generated-white-airplane-against-blue-sky_35831030.jpg" ,"../photos/stephan-mahlke-_sV6KGUWfFo-unsplash.jpg"]
+        var index = 0;
+        window.onload=function(){
+        setInterval (function(){
+          if (index === imageSources.length) {
+            index = 0;
+          }
+          document.getElementById("main-body").style.backgroundImage = `url(${imageSources[index]})` ;
+          index++;
+        } , 4000);
+        }
+            </script>
+    </body>
+</html>

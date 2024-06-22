@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/mystyle.css">
+    <script src="/Java/myscript.js"></script>
+    <title>Add User</title>
+</head>
+<header>
+    <a class="Admin-header" href="#">Welcome Admin</a>
+    <nav class="headeritems">
+        <a href='admin1'>Home</a>
+    </nav>
+</header>
+<body id="admin-body1">
+    <h2 id="aaddd">ADD User</h2>
+    <div class="adduser">
+   <form onsubmit="return validateadd()"  action="../Routes/submitadd" method="post">
+    <div id="one">
+    <input type="text" placeholder="Enter The New Username" required name="addname">
+   </div>
+   <div id="onee">
+    <input type="email" placeholder="Enter The Username Email" required id="ead" name="addemail">
+   </div>
+   <div id="oneee">
+    <input type="password" placeholder="Enter The Username Password" required id="pad1" name="addpassword">
+   </div>
+   <button type="submit" id="bb">Submit</button>
+   </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/mystyle.css">
+    <script src="/Java/myscript.js"></script>
+    <title>Document</title>
+</head>
+<header>
+    <a class="Admin-header" href="#">Welcome Admin</a>
+    <nav class="headeritems">
+        <a href='admin1'>Home</a>
+    </nav>
+</header>
+<body id="admin-body1">
+    <h2 id="addflight">ADD Flight</h2>
+    <div class="aflight">
+   <form onsubmit="return validateaddf()"  action="../Routes/submitaddflight" method="post">
+    <div id="f1">
+    <input type="text" placeholder="Enter Flight Number You Want To Add" required name="addflightnumber">
+   </div>
+   <div id="f2">
+    <select  id="From1" name="addflightorigin"> 
+        <option value="From">From</option>
+        <option value="Egypt">Egypt</option>
+        <option value="Saudi Arabia">Saudi Arabia</option>
+        <option value="Kuwait">Kuwait</option>
+        <option value="Oman">Oman</option>
+    </select>   
+</div>
+   <div id="f3">
+    <select  id="To1" name="addflightnumberdestination">
+    <option value="To">To</option>
+    <option value="Egypt">Egypt</option>
+    <option value="Saudi Arabia">Saudi Arabia</option>
+    <option value="Kuwait">Kuwait</option>
+    <option value="Oman">Oman</option>
+    </select>>
+   </div>
+   <div id="f4">
+    <input type="time" placeholder="Enter Departure Time You Want To Add" required name="addflightdtime">
+   </div>
+   <div id="f4">
+    <input type="date"  placeholder="Enter Departure Date You Want To Add" required name="addflightddate">
+</div>
+   <div id="f5">
+    <input type="time" placeholder="Enter Arrival Time You Want To Add" required name="addflightatime">
+   </div>
+   <button type="submit" id="ff">Submit</button>
+   </form>
+    </div>
+</body>
+</html>

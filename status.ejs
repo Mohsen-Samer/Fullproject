@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status</title>
+    <link rel="stylesheet" href="/styles/mystyle.css">
+    <script src="/Java/myscript.js"></script>
+
+</head>
+<header>
+    <a class="logo" href="#">Blue Sky</a>
+    <nav class="headeritems">
+        <a href='index2'>Home</a>
+    </nav>
+</header>
+<body id="body-status">
+    <header>
+        <a class="logo" >Blue Sky</a>
+        <nav class="headeritems">
+            <a href="index.html">Home</a>
+            
+        </nav>
+    </header>
+    <br><br>
+    <br>
+
+        <h2 id="t1" style="color: #fff;" >Status</h2> 
+        <br>
+        <div id="table1">
+   <table id="ta1" >
+    <tr id="tr1">
+        <th width="100">Flight Number</th>
+        <th width="100">Origin</th>
+        <th width="100">Destination</th>
+        <th width="100">Departue Time</th>
+        <th width="100">Arrival Time</th>
+        <th width="100">Status</th>
+    </tr>
+    <% status.forEach(flight => { %>
+    <tr id="tr2">
+        <th id="flightt-num" style="color: #333;"><%= flight.addflightnumber %></th>
+        <th id="Origin-id" style="color: #333;" ><%= flight.addflightorigin %></th>
+        <th id="Destination-id" style="color: #333;"><%= flight.addflightnumberdestination %></th>
+        <th id="Departure-time-idd" style="color: #333;"><%= flight.addflightdtime %></th>
+        <th id="Arrival-time-idd" style="color: #333;"><%= flight.addflightatime %></th>
+        <th id="statuss-idd" style="color: #333;">Active</th>
+    </tr>
+    <% }) %>
+
+</table>
+</div>
+</body>
+</html>

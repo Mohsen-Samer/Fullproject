@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/mystyle.css">
+    <script src="/Java/myscript.js"></script>
+    <title>Edit User</title>
+</head>
+<header>
+    <a class="Admin-header" href="#">Welcome Admin</a>
+    <nav class="headeritems">
+        <a href='admin1'>Home</a>
+    </nav>
+</header>
+<body id="admin-body1">
+    <h2 id="edittt">EDIT User</h2>
+    <div class="edituser">
+        <form onsubmit="return validateEdit()" action="../Routes/edituser" method="post">
+            <input type="hidden" name="_method" value="PUT">
+            <div id="two">
+                <input type="text" placeholder="Enter Name You Want To Edit" name="Currentname" required>
+                <input type="text" placeholder="Enter The New Name" name="newname" required>
+            </div>
+            <div id="twoo">
+                <input type="email" placeholder="Enter Email You Want To Edit" name="Currentemail" required id="ead1">
+                <input type="email" placeholder="Enter The New Email" name="newemail" required id="ead2">
+            </div>
+            <div id="twoo">
+                <input type="password" placeholder="Enter Password You Want To Edit" name="Currentpassword" required id="pad2">
+                <input type="password" placeholder="Enter The New Password" name="newpassword" required id="pad3">
+            </div>
+            <button type="submit" id="bbb">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

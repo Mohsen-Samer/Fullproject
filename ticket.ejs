@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/mystyle.css">
+    <script src="/Java/myscript.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<header>
+    <a class="logo" href="#">Blue Sky</a>
+    <nav class="headeritems">
+        <a href='index2'>Home</a>
+    </nav>
+</header>
+<body id="body-ticket">
+    <h2 id="h2-contact" style="color: #fff;">Ticket</h2>
+    <section class="flightt" id="flightt">
+        <div class="flightt-div">
+            <div class="box-flightt">
+                <div class="left-box-flightt">
+                    <h2 id="h2-flightt" > Flight Ticket</h2>
+                    <hr style="margin-top: -20px;">
+                    <br>
+                    <div class="row-flightt">
+                        <div class="row-group-flightt" >
+                            <label class="label-ticket" style="color: red ">Passenger Name:</label>
+                            <div id="pass-name">
+                                <%= arr[0].name %>
+                            </div>
+                        </div>
+                        <div class="row-group-flightt" id="ticket-numberrr-labell">
+                            <label class="label-ticket" style="color: red;" id="ticket-number-label">Ticket Number</label>
+                            <div id="tic-name" style="margin-right: 95px;">
+                                4111
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-flightt">
+                        <div class="row-group-flightt" >
+                            <label class="label-ticket" style="color: red ">Flight ID:</label>
+                            <div id="flight-idd">
+                                722
+                            </div>
+                        </div>
+                         <div class="row-group-flightt" >
+                            <label class="label-ticket" id="class-label" style="color: red ">Class:</label>
+                            <div id="classss">
+                                First Class
+                            </div>
+                            
+                        </div> 
+                    </div>
+                    <div class="row-flightt">
+                        <div class="row-group-flightt">
+                            <label class="label-ticket" style="color: red ">Terminal:</label>
+                            <div id="gatee">
+                                Gate 3
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-box-flightt">
+                    <h3 id="h3-flightt-right" style="color: #fff;">Blue Sky</h3>
+                    <i class="fa-solid fa-plane"></i>
+                    <br>
+                    
+                    <br>
+                    <label id="label-flightt-right" style="color: #fff;">Thanks For Choosing Us</label>
+                    <br>
+                    
+                    <label id="label-flightt-right" style="color: #fff;">please be at Gate at boarding time</label>
+                </div>
+            </div>
+        </div>
+    </section>
+<script>
+    window.onload=function()
+{
+    const Para = new URLSearchParams(window.location.search);
+    const ticketNum = Para.get("ticket");
+    if (ticketNum == "5123") {
+        document.getElementById("tic-name").innerHTML = "5123";
+        document.getElementById("pass-name").innerHTML = "Mohsen";
+        document.getElementById("flight-idd").innerHTML = "481";
+        document.getElementById("classss").innerHTML = "Economy Class" ;
+        document.getElementById("gatee").innerHTML = "Gate 6";
+    }
+    if (ticketNum == "6944") {
+        document.getElementById("tic-name").innerHTML = "6944";
+        document.getElementById("pass-name").innerHTML = "Cristiano";
+        document.getElementById("flight-idd").innerHTML = "395";
+        document.getElementById("classss").innerHTML = "Business Class";
+        document.getElementById("gatee").innerHTML = "Gate 9";
+    }
+}
+</script>
+</body>
+</html>

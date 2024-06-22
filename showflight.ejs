@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Flights</title>
+    <link rel="stylesheet" href="/styles/mystyle.css">
+    <script src="/Java/myscript.js"></script>
+    <style>
+ 
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px black ;
+        }
+        .flight-details {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #e0e0e0;
+            border-radius: 8px;
+        }
+        .flight-info {
+            color: black;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<header style="top: 0;">
+    <a class="Admin-header" href="#">Welcome Admin</a>
+    <nav class="headeritems">
+        <a href='admin1'>Home</a>
+    </nav>
+</header>
+<body id="admin-body1">
+    <div class="container">
+        <h1>List of Flights</h1>
+        <div id="flightList">
+            <% for(let x=0; x<arr.length; x++) { %>
+                <div class="flight-details">
+                    <div class="flight-info">
+                        <strong>Flight Number:</strong> <%= arr[x].addflightnumber %>
+                    </div>
+                    <div class="flight-info">
+                        <strong>Origin:</strong> <%= arr[x].addflightorigin %>
+                    </div>
+                    <div class="flight-info">
+                        <strong>Destination:</strong> <%= arr[x].addflightnumberdestination %>
+                    </div>
+                    <div class="flight-info">
+                        <strong>Date:</strong> <%= arr[x].addflightddate %>
+                    </div>
+                </div>
+            <% } %>
+        </div>
+    </div>
+</body>
+</html>

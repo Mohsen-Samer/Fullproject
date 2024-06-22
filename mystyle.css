@@ -1,0 +1,1288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
+    
+  font-family: 'Poppins', sans-serif;
+  padding:0px;
+  margin:0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+header{
+    background-color: #333;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+
+}
+body{
+    background-image: url("../photos/pexels-walter-sietinga-130250-396437.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    opacity: 0.9;
+}
+#main-body{
+    background-image: url("../photos/pexels-walter-sietinga-130250-396437.jpg");
+}
+#signin-body{
+    background-image: url("../photos/kevin-hackert-jO42qNF3DIQ-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    opacity: 0.9;
+}
+#About-us-body{
+    background-image: url("../photos/vecteezy_ai-generated-white-airplane-against-blue-sky_35831030.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    opacity: 0.9;
+}
+#body-status{
+    background-image: url("../photos/status-flight.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    opacity: 0.9;
+   }
+   #body-ticket{
+    background-image: url("../photos/mariya-oliynyk-RgNwiRFw62A-unsplash.jpg");
+    background-size: cover;
+       background-repeat: no-repeat;
+   background-position: center;
+        color: white;
+   opacity: 0.9;
+       }
+     #body-pay{
+      background-image: url("../photos/eva-darron-oCdVtGFeDC0-unsplash.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+     color: white;
+      opacity: 0.9;
+     }
+     #book-tickets{
+        background-image: url("../photos/pexels-ahmedmuntasir-912050.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+       color: white;
+       background-attachment: fixed;
+        opacity: 0.9;
+     }
+
+.logo{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+.headeritems a{
+    color: white;
+    font-weight: 600;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 0 15px;
+    transition: color 0.3s ease;
+}
+.headeritems a:hover{
+    color: olive;
+}
+.row1 {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#bookingFormBtn {
+    flex: 1; 
+    padding: 12px;
+    font-size: 17px;
+    background: #6c63ff;
+    color: #fff;
+    margin-bottom: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+#bookingFormBtn:hover {
+    background-color: #4c46ba;
+    transition: background-color 0.3s;
+    
+}
+
+#myBookingBtn {
+    flex: 1; 
+    padding: 12px;
+    font-size: 17px;
+    background: #6c63ff;
+    color: #fff;
+    margin-bottom: 10px;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 5px;
+}
+#myBookingBtn:hover {
+    background-color: #4c46ba;    
+    transition: background-color 0.3s;
+
+}
+
+#bookTic{
+    
+    padding: 0px;
+    font-size: 15px;
+    background: black;
+    color: #fff;
+    margin-bottom: 10px;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 5px;
+}
+#flightStatusBtn {
+    flex: 1;
+    padding: 12px;
+    font-size: 17px;
+    background: #6c63ff;
+    color: #fff;
+    margin-bottom: 10px;
+   text-decoration: none;
+   text-align: center;
+}
+#flightStatusBtn:hover {
+    background-color: #4c46ba;    
+    transition: background-color 0.3s;
+
+}
+
+    #form-booking{
+    background-color: #000;
+    height: 600px;
+    width: 800px;
+    margin: auto;
+    padding: 20px;
+    }
+    #form-booking h3{
+     border-bottom: 2px solid #3399ff;
+     width: 210px;
+     padding: 5px;
+    }
+    ::placeholder{
+        color: #fff;   
+    }
+    #h1-booking{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-left: 30%;
+
+    }
+    #From{
+        width: 300px;
+        margin: 5px;
+   border-top: none;
+    border-Left: none;
+     border-right: none;
+   outline: none;
+    background: transparent;
+    color: #fff;
+    background-color: black;
+    }
+    #To{
+        width: 300px;
+        margin: 5px;
+   border-top: none;
+    border-Left: none;
+     border-right: none;
+   outline: none;
+    background: transparent;
+    color: #fff;
+    background-color: black;
+    }
+    #input #input-group-preffered-1{
+        width: 300px;
+         margin: 5px;
+    border-top: none;
+     border-Left: none;
+      border-right: none;
+    outline: none;
+     background: transparent;
+     color: #fff;
+     background-color: black;
+    }
+    #input #input-group-preffered-2{
+        width: 300px;
+         margin: 5px;
+    border-top: none;
+     border-Left: none;
+      border-right: none;
+    outline: none;
+     background: transparent;
+     color: #fff;
+     background-color: black;
+    }
+    #input2 #input-group1{
+        width: 195px;
+        margin: 5px;
+        border-top: none;
+     border-Left: none;
+      border-right: none;
+    outline: none;
+     background: transparent;
+     color: #fff;
+    }
+    #input2 #input-group2{
+        width: 195px;
+        margin: 5px;
+        border-top: none;
+     border-Left: none;
+      border-right: none;
+    outline: none;
+     background: transparent;
+     color: #fff;
+    }
+    #input2 #input-group3{
+        width: 195px;
+        margin: 5px;
+        border-top: none;
+     border-Left: none;
+      border-right: none;
+    outline: none;
+     background: transparent;
+     color: #fff;
+    }
+    #input3 #input-group{
+        margin-left: 50px;
+    }
+    #input4 #input-group{
+    width: 300px;
+    margin: 5px;
+    border-top: none;
+     border-Left: none;
+      border-right: none;
+    outline: none;
+     background: transparent;
+     color: #fff;
+    }
+    #input4 #input-group1{
+     width: 615px;
+     margin: 5px;
+     border-top: none;
+     border-Left: none;
+      border-right: none;
+    outline: none;
+     background: transparent;
+     color: #fff;
+    }
+    #bookingSubmit{
+        width: 115px; 
+        height: 38px; 
+        border-radius: 5px;
+        margin-top: 15px;
+        background: #6c63ff; 
+        color: #fff; 
+        border: none;
+    }
+    #bookingSubmit:hover {
+        background-color: #4c46ba;    
+        transition: background-color 0.3s;
+    
+    }
+    #resetbtn{
+        width: 115px; 
+        height: 38px; 
+        border-radius: 5px;
+        margin-top: 15px;
+        background: #566300; 
+        color: #fff; 
+        border: none;
+    }
+    #resetbtn:hover {
+        background-color: #475202;    
+        transition: background-color 0.3s;
+    
+    }
+/* 3aizn nbos 3la deh tany */
+    .about1 {
+        background-color: #fff;
+        padding: 20px;
+        width: 80%;
+        margin: 0px auto;
+        margin-bottom: 50px;
+        color: black;
+        box-shadow: 0 0 10px black;
+        border-radius: 10px; 
+    }
+    .Services {
+        background-color: #fff;
+        padding: 20px;
+        width: 80%;
+        margin: 50px auto;
+        color: black;
+        box-shadow: 0 0 10px black;
+        border-radius: 10px; 
+    }
+    li img {
+        width: 200px;
+        height: 125px;
+        object-fit: cover;
+        margin-right: 20px;
+        float: left;
+    }
+    h2 {
+        color: #6c63ff;
+        padding-left: 10px;
+        padding-top: 10px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    h3 {
+        font-size: 20px; 
+        color: #1e1b1b; 
+        margin-top: 20px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    p {
+        font-size: 18px;
+        margin-bottom: 20px;
+        line-height: 1.6;
+    }
+    
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    li {
+        margin-bottom: 30px;
+    }
+    
+    .contact {
+        background-color: #fff; 
+        padding: 20px;
+        width: 80%;
+        margin: 50px auto;
+        color: black;
+        box-shadow: 0 0 10px black;
+    }
+    .contact-div{
+        width:80% ;
+        margin: 50px auto;
+   }
+   .box-contact{
+    display: flex;
+    background-color: #fff; /* amor */
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+   }
+   .left-box-contact{
+       flex-basis: 60%; /* bta5od msa7a 60% mn al box */
+       padding: 20px;
+   }
+   .right-box-contact{
+       flex-basis: 40%;
+       padding: 20px;
+       background: #1c00b5;
+       color: #fff;
+   }
+   #h1-contact{
+       color: #6c63ff;
+       margin-bottom: 10px;
+   }
+   #h3-contact{
+       color: #6c63ff;
+       margin-bottom: 30px;
+   }
+   #h3-contact-right{
+    color: #CCCCCC;
+    margin-bottom: 30px;
+}
+   .contact p {
+    font-size: 18px;
+    color: black; 
+    margin-bottom: 20px;
+}
+   .contact-div p{
+       margin-bottom: 40px;
+   }
+   .row-contact{
+       display: flex;
+       justify-content: space-between;
+       margin-bottom: 20px;
+   }
+   #input-contact{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid rgb(23, 60, 98);
+   }
+   #input-contact-2{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid rgb(23, 60, 98);
+
+   }
+   #input-contact-3{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid rgb(23, 60, 98);
+
+   }
+   #input-contact::placeholder{
+    color: gray;
+   }
+   #textarea-contact{
+       width: 100%;
+       border: 1px solid black ;
+       padding: 10px;
+       box-sizing: border-box;
+       margin-bottom: 20px;
+   }
+   #textarea-contact::placeholder{
+    color: gray;
+   }
+   #label-contact{
+    color: black;
+       margin-bottom: 6px;
+       display: block;
+   }
+   #label-contact-right{
+    color: #CCCCCC;
+       margin-bottom: 6px;
+       display: block;
+   }
+   #button-contact{
+    width: 120px; 
+    height: 40px; 
+    border-radius: 20px;
+    margin-top: 20px;
+    background: #6c63ff; 
+    color: #fff; 
+    border: none;
+   }
+   #button-contact:hover {
+    background-color: #4c46ba;    
+}
+
+.container-pay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    }
+    .container-pay form{
+      padding: 20px;
+      width: 700px;
+      background-color: #fff;
+      box-shadow: 0 5px 10px black;
+    }
+   .row-pay{
+    display: flex;  
+    flex-wrap: wrap;
+    gap: 15px;
+    }
+   .col-pay{
+      flex: 1 1 250px;
+    }
+  .title-pay{
+      font-size: 23px;
+      color: #333;
+      padding-bottom: 5px;
+      text-transform: uppercase;
+    }
+  .inputbox-pay{
+    margin: 15px 0;
+    }
+  #pay1{
+      margin-bottom: 10px;
+      display: block;
+      color: #000;  
+    }
+    .container-pay form .row-pay .col-pay .inputbox-pay input{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: none;  
+    }
+    .container-pay form .row-pay .col-pay .inputbox-pay img{
+      height: 34px;
+      margin-top: 5px;
+      filter: drop-shadow(0 0 1px #000);
+    }
+    .container-pay form .submit-btn{
+      width: 100%;
+      padding: 12px;
+      font-size: 17px;
+      background: #6c63ff; 
+      color: #fff;
+      margin-top: 5px;
+    }
+    .container-pay form .submit-btn:hover{
+        background-color: #4c46ba;    
+    }
+    input::placeholder{
+        color:gray;
+    }
+    .container-sign{
+        max-width:600px;
+        min-height:750px;
+        margin:auto;
+        position:relative;
+    
+    }
+    .login-html{
+        width:100%;
+        height:100%;
+        position:absolute;
+        padding:125px 70px 50px 70px;
+        background:rgba(40,57,101,.9);
+    }
+    .sign-in-htm, .sign-up-htm{
+        top: 10px;
+        left:0;
+        right:0;
+        bottom:0;
+        position:absolute;
+        transform:rotateY(180deg);
+        backface-visibility:hidden;
+        transition:all .4s linear;
+    }
+     .sign-in, .sign-up, .group .check{
+        display:none;
+    }
+     .tab, .group .label, .group .button{
+        text-transform:uppercase;
+    }
+     .tab{
+        font-size:22px;
+        margin-right:15px;
+        padding-bottom:5px;
+        margin:0 15px 10px 0;
+        display:inline-block;
+        border-bottom:2px solid transparent;
+    }
+    .login-html .sign-in:checked + .tab,
+    .login-html .sign-up:checked + .tab{
+        color:#fff;
+        border-color:#1161ee;
+    }
+    .login-form{
+        min-height:345px;
+        position:relative;
+        perspective:1000px;
+        transform-style:preserve-3d;
+    }
+    .login-form .group{
+        margin-bottom:15px;
+    }
+    .login-form .group .label,
+    .login-form .group .input,
+    .login-form .group .button{
+        width:100%;
+        color:#fff;
+        display:block;
+    }
+    .login-form .group .input,
+    .login-form .group .button{
+        border:none;
+        padding:15px 20px;
+        border-radius:25px;
+        background:rgba(255,255,255,0.1);    
+    }
+    .login-form .group input[data-type="password"]{
+        -webkit-text-security:circle;
+    }
+    .login-form .group .label{
+        color:#aaa;
+        font-size:12px;
+    }
+    .login-form .group .button{
+        background:#1161ee;
+    }
+    .login-form .group .button:hover {
+        background-color: #0f49af;    
+        transition: background-color 0.3s;
+    }
+    .login-form .group label .icon{
+        width:15px;
+        height:15px;
+        border-radius:2px;
+        position:relative;
+        display:inline-block;
+        background:rgba(255,255,255,.1);
+    }
+    .login-form .group label .icon:before,
+    .login-form .group label .icon:after{
+        content:'';
+        width:10px;
+        height:2px;
+        background:#fff;
+        position:absolute;
+        transition:all .2s ease-in-out 0s;
+    }
+    .login-form .group label .icon:before{
+        left:3px;
+        width:5px;
+        bottom:6px;
+        transform:scale(0) rotate(0);
+    }
+    .login-form .group label .icon:after{
+        top:6px;
+        right:0;
+        transform:scale(0) rotate(0);
+    }
+    .login-form .group .check:checked + label{
+        color:#fff;
+    }
+    .login-form .group .check:checked + label .icon{
+        background:#1161ee;
+    }
+    .login-form .group .check:checked + label .icon:before{
+        transform:scale(1) rotate(45deg);
+    }
+    .login-form .group .check:checked + label .icon:after{
+        transform:scale(1) rotate(-45deg);
+    }
+    .login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm{
+        transform:rotate(0);
+    }
+    .login-html .sign-up:checked + .tab + .login-form .sign-up-htm{
+        transform:rotate(0);
+    }
+    
+    .hr{
+        height:2px;
+        margin:60px 0 50px 0;
+        background:#333;
+    }
+    .foot-lnk{
+        text-align:center;
+    }
+    /*??????????*/
+    #t1{
+        text-align: center;
+        margin-top: 90px;
+    }
+    #ta1{
+        background-color: #000;
+        width: 800;
+    
+    }
+    #tr1{
+        background-color: gray;
+    
+    
+    }
+    #tr2{
+    background-color: lightgray;
+    }
+    #table1{
+        text-align: center;
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+   
+    #deee{
+        text-align: center;
+
+    }
+    #taa{
+        background-color: #000;
+        width: 800;
+
+    }
+    #trr{
+        background-color: gray;
+
+
+    }
+    #trt{
+    background-color: lightgray;
+    }
+    #trtt{
+        background-color: lightgray;
+        }
+        #trttt1{
+            background-color: lightgray;
+            }
+    #tablee{
+        text-align: center;
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    #admin-body{
+        background-image: url("../photos/stephan-mahlke-_sV6KGUWfFo-unsplash.jpg");
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    #admin-body1{
+     background-image: url("../photos/stephan-mahlke-_sV6KGUWfFo-unsplash.jpg");
+    background-size: cover;
+    color: white;
+    opacity: 0.9;
+    }
+    .div-admin {
+        text-align: center;
+    }
+    
+    .btn-admin {
+        display: inline-block;
+        padding: 15px 30px;
+        background-color: #6c63ff;
+        color: #fff;
+        font-size: 18px;
+        transition: background-color 0.3s;
+        text-decoration: none;
+    }
+    
+    .btn-admin:hover {
+        background-color: #4c46ba;
+    }
+    #header1{
+        background-color: #333;
+        color: #fff;
+        padding: 12px;
+        top: 0;
+        width: 100%;
+    }
+    .Admin-header {
+        color: #fff;
+        font-size: 26px;
+        text-decoration: none;
+    }
+    
+
+    .adduser {
+        max-width: 600px; 
+        margin: 20px auto;
+        padding: 40px;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 10px black 
+    }
+
+
+    .adduser input
+   {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid #ccc; 
+    outline: none;
+    background-color: transparent;
+    transition: border-bottom-color 0.3s; 
+}
+
+   #bb{
+        width: 100%;
+        padding: 15px;
+        background: #6c63ff; 
+        color: #fff; 
+        border: none;
+        border-radius: 5px;
+    }
+    #aaddd {
+        text-align: center;
+        margin-bottom: 30px; 
+    }
+
+    .edituser {
+        max-width: 600px; 
+        margin: 20px auto;
+        padding: 40px;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 10px black
+    }
+
+
+    .edituser input{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid #ccc; 
+    outline: none;
+    background-color: transparent;
+    transition: border-bottom-color 0.3s; 
+}
+#edittt {
+    text-align: center;
+    margin-bottom: 30px; 
+}
+
+   #bbb {
+    width: 100%;
+    padding: 15px;
+    background: #6c63ff; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    }
+
+
+    #deleteee {
+        text-align: center;
+        margin-bottom: 30px; 
+    }
+    .deleteuser {
+        max-width: 600px; 
+        margin: 20px auto;
+        padding: 40px;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 10px black
+    }
+
+
+    .deleteuser input{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid #ccc; 
+    outline: none;
+    background-color: transparent;
+    transition: border-bottom-color 0.3s; 
+}
+
+   #bbbb{
+    width: 100%;
+    padding: 15px;
+    background: #6c63ff; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    }
+
+    .aflight{
+        max-width: 500px;
+        margin: 20px auto;
+        padding: 30px;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 20px black
+    }
+
+    .aflight input {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+    #ff {
+        width: 100%;
+        padding: 15px;
+        background: #6c63ff; 
+        color: #fff; 
+        border: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    #ff:hover {
+        background-color: #4c46ba;
+    }
+    #addflight {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .eflight {
+        max-width: 500px;
+        margin: 20px auto;
+        padding: 30px;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 20px black
+    }
+
+    .eflight input {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+    #fff {
+        width: 100%;
+        padding: 15px;
+        background: #6c63ff; 
+        color: #fff; 
+        border: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    #fff:hover {
+        background-color: #4c46ba;
+    }
+
+    #editflight {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .dflight {
+        max-width: 500px;
+        margin: 20px auto;
+        padding: 30px;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 20px black
+    }
+
+    .dflight input {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+    #ffff {
+        width: 100%;
+        padding: 15px;
+        background: #6c63ff; 
+        color: #fff; 
+        border: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    #ffff:hover {
+        background-color: #4c46ba;    
+    }
+
+    #deleteflight {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .flightt {
+        background-color: #fff; 
+        padding: 20px;
+        width: 80%;
+        margin: 50px auto;
+        color: black;
+        box-shadow: 0 0 10px black;
+    }
+    .flightt-div{
+        width:80% ;
+        margin: 50px auto;
+   }
+   .box-flightt{
+    display: flex;
+    background-color: #fff; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+   }
+   .left-box-flightt{
+       flex-basis: 60%; 
+       padding: 20px;
+   }
+   .right-box-flightt{
+       flex-basis: 40%;
+       padding: 20px;
+       background: #1c00b5;
+       color: #fff;
+   }
+
+   #h2-flightt{
+       color: #6c63ff;
+       margin-bottom: 20px;
+   }
+   #h3-flightt-right{
+    color: #CCCCCC;
+    margin-bottom: 30px;
+}
+
+   .row-flightt{
+       display: flex;
+       justify-content: space-between;
+       margin-bottom: 20px;
+   } 
+   #label-flightt{
+    color: black;
+       margin-bottom: 6px;
+       display: block;
+   }
+   #label-flightt-right{
+    color: #CCCCCC;
+       margin-bottom: 6px;
+       display: block;
+   }
+   #classss {
+    margin-right: 4.3em; 
+}
+#ticket-numberrr-labell
+{
+    margin-right: 30px; 
+}
+#class-label {
+    width: 80px; 
+    display: inline-block;
+}
+
+#ticket-number-label {
+    width: 120px; 
+    display: inline-block;
+}
+
+.label-ticket {
+    color: red;
+    margin-bottom: 6px;
+    display: block;
+}
+
+#table1 {
+    width: 100%;
+  }
+
+  #ta1 {
+    width: 100%;
+    border-collapse: collapse; /* bizbt al 5t 2ly ben al gdwl*/
+  }
+
+  #tr1 th {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+  }
+
+  #tr2 th {
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+
+  #tr2 th[id^="flightt-num"],
+  #tr2 th[id^="Origin-id"],
+  #tr2 th[id^="Destination-id"],
+  #tr2 th[id^="Departure-time-idd"],
+  #tr2 th[id^="Arrival-time-idd"],
+  #tr2 th[id^="statuss-idd"] {
+    text-align: center;
+  }
+
+  #tr2 th[id^="flightt-num"],
+  #tr2 th[id^="Origin-id"],
+  #tr2 th[id^="Destination-id"] {
+    width: 100px;
+  }
+
+  #tr2 th[id^="Departure-time-idd"],
+  #tr2 th[id^="Arrival-time-idd"],
+  #tr2 th[id^="statuss-idd"] {
+    width: 100px;
+  }
+
+  #tr2 th {
+    border: 1px solid #ccc;
+  }
+
+  #tr2 th:first-child {
+    border-left: none;
+  }
+
+  #tr2 th:last-child {
+    border-right: none;
+  }
+
+  #tr2 th:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+
+  #tr2 th:hover {
+    background-color: #f2f2f2;
+  }
+  .fa-plane{
+font-size: 120px;
+margin-left: 100px;
+position: static;
+  }
+#i1{
+    font-size: 25px;
+    
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    background-color: black;
+}
+.plane {
+    margin: 20px auto;
+    max-width: 300px;
+    background: #dddddd;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+  
+.select{
+    height: 250px; 
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+    
+.select h1{
+      width: 60%;
+      margin: 100px auto 35px auto;
+}
+
+.Exitt{
+    height: 50px;
+    position: relative;
+}
+
+.Exitt:before, .Exitt:after{
+      content: 'EXIT';
+      font-size: 14px;
+      line-height: 18px;
+      padding: 0px 2px 2px 2px;
+      display: block;
+      position: absolute;
+      background: red;
+      color: white;
+      top: 50%;
+      transform: translate(0, -50%);
+      border-radius: 5px;
+    }
+.Exitt:before {
+      left: 10px;
+}
+.Exitt:after {
+      right: 10px;
+}
+
+ol{
+    list-style :none;
+    padding: 0;
+    margin: 0;
+}
+  
+
+.seats {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;  
+}
+  
+.seat {
+    display: flex;
+    flex: 0 0 14.28%;
+    padding: 5px;
+    position: relative;  
+  }
+  .seat label{
+    display: block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+    line-height: 1.5rem;
+    padding: 4px 0;
+    background: #5bfc60;
+    border-radius: 5px;
+    color: black;
+  }
+  .seat label:hover{
+    cursor: pointer;
+    box-shadow: 0 0 0px 2px green;
+  }
+  .seat input[type=checkbox]{
+    position: absolute;
+  }
+  .seat input[type=checkbox]:checked + label{
+    background: #656e65;
+  }
+  .seat:nth-child(3) {
+    margin-right: 14%;
+  }
+
+
+
+
+
+  .signin-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .signin-button:hover {
+    background-color: #0056b3;
+  }
+
+
+
+
+
+
+ 
+#f2 select,
+#f3 select {
+  width:100%;
+  padding: 8px; 
+  font-size: 16px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1); 
+  background-color: #fff; 
+  color: #333; 
+}
+
+#f2, #f3 {
+  margin-bottom: 15px;
+}
+
+
+
+
+
+

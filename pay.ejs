@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styles/mystyle.css">
+        <script src="/Java/myscript.js"></script>
+        <title>Payment Page</title>
+
+        
+    </head>
+    
+    <body id="body-pay">
+        <div class="container-pay">
+
+           <form  action="../Routes/submitpay" method="post">
+            <div class="row-pay">
+                <div class="col-pay">
+            <h3 class="title-pay">Billing Address</h3>
+
+            <div class="inputbox-pay">
+                <span id="pay1">Name:</span>
+                <input type="text" placeholder="Enter Your Name" id="full" maxlength="20" name="name" >
+            </div>
+
+            <div class="inputbox-pay">
+                <span id="pay1">Email:</span>
+                <input type="email" placeholder="Example@Example.com" id="email" name="email">
+            </div>
+
+            <div class="inputbox-pay">
+                <span id="pay1">Address:</span>
+                <input type="text" placeholder="Enter Your Address" id="addd" name="address">
+            </div>
+
+            <div class="inputbox-pay">
+                <span id="pay1">City:</span>
+                <input type="text" placeholder="Enter Your City" id="city" name="city">
+            </div>
+
+            <div class="flex-pay">
+                
+                <div class="inputbox-pay">
+                    <span id="pay1">State:</span>
+                    <input type="text" placeholder="Enter Your State" id="state" name="state">
+                </div>
+
+                <div class="inputbox-pay">
+                    <span id="pay1">zip code:</span>
+                    <input type="number" placeholder="123 456" id="code" min="0" name="zipCode">
+                </div>
+
+            </div>
+
+            </div>
+
+            <div class="col-pay">
+                <h3 class="title-pay"> Payment </h3>
+
+                
+
+                <div class="inputbox-pay">
+                    <span id="pay1">Name on Card:</span>
+                    <input type="text" placeholder="Name on Card" id="nameon" name="nameOnCard">
+                </div>
+
+
+                <div class="inputbox-pay">
+                    <span id="pay1">Credit Card Number :</span>
+                    <input type="tel" inputmode="numeric" placeholder="1111-2222-3333-4444" id="ccnn" minlength="16" maxlength="16" name="cardNumber">
+                </div>
+
+                <div class="inputbox-pay">
+                    <span id="pay1">exp month :</span>
+                    <input type="number" placeholder="Exp month" id="exmounth" min="1" max="12" name="expMonth">
+                </div>
+    
+                <div class="inputbox-pay">
+                    <span id="pay1">exp Year:</span>
+                    <input type="number" placeholder="Exp year" id="exy" min="24" max="35" name="expYear">
+                </div>
+    
+                <div class="flex-pay">
+                    
+                    <div class="inputbox-pay">
+                        <span id="pay1">CVV:</span>
+                        <input type="number" placeholder="123" id="cvcvc" min="100" max="999" name="cvv">
+                    </div>
+
+                </div>
+                </div>
+            </div>
+            <input type="submit" value="proceed to checkout" class="submit-btn">
+           </form>
+        </div>
+    </body>
+    </html>

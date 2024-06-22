@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/mystyle.css">
+    <script src="/Java/myscript.js"></script>
+    <title>Remove User</title>
+</head>
+<header>
+    <a class="Admin-header" href="#">Welcome Admin</a>
+    <nav class="headeritems">
+        <a href='admin1'>Home</a>
+    </nav>
+</header>
+<body id="admin-body1">
+    <h2 id="deleteee">Delete User</h2>
+    <div class="deleteuser">
+   <form onsubmit="return validateRemove()"  action="../Routes/deleteuser" method="post">
+    <div id="Three">
+    <input type="text" placeholder="Enter Name You want to delete" required name="deletename">
+   </div>
+   <button type="submit" id="bbbb">Submit</button>
+   </form>
+    </div>
+</body>
+</html>

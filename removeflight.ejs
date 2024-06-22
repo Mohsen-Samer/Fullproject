@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/mystyle.css">
+    <script src="/Java/myscript.js"></script>
+    <title>Document</title>
+</head>
+<header>
+    <a class="Admin-header" href="#">Welcome Admin</a>
+    <nav class="headeritems">
+        <a href='admin1'>Home</a>
+    </nav>
+</header>
+<body id="admin-body1">
+    <h2 id="deleteflight">ADD Flight</h2>
+    <div class="dflight">
+   <form onsubmit="return validateRemovef()" action="../Routes/deleteflight" method="post">
+    <div id="fff1">
+    <input type="text" placeholder="Enter Flight Number You Want To Delete" required name="deleteflightnumber">
+   </div>
+   <button type="submit" id="ffff">Submit</button>
+   </form>
+    </div>
+</body>
+</html>

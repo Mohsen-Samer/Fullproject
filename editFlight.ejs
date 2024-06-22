@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/mystyle.css">
+    <script src="/Java/myscript.js"></script>
+    <title>Document</title>
+</head>
+<header>
+    <a class="Admin-header" href="#">Welcome Admin</a>
+    <nav class="headeritems">
+        <a href='admin1'>Home</a>
+    </nav>
+</header>
+<body id="admin-body1">
+    <h2 id="editflight">ADD Flight</h2>
+    <div class="eflight">
+   <form onsubmit="return validateEditf()" action="../Routes/editflightt" method="post">
+    <input type="hidden" name="_method" value="PUT">
+    <div id="ff1">
+    <input type="text" placeholder="Enter Flight Number You Want To Edit" required name="flightnumber">
+   </div>
+   <div id="ff2">
+    <input type="text" placeholder="Enter Origin You Want To Edit" required name="Currentorigin">
+    <input type="text" placeholder="Enter The New Origin" required name="neworigin">
+   </div>
+   <div id="ff3">
+    <input type="text" placeholder="Enter Destination You Want To Edit" required name="Currentdestination">
+    <input type="text" placeholder="Enter The New Destination" required name="newdestination">
+   </div>
+   <div id="ff4">
+    <input type="text" placeholder="Enter Departure Time You Want To Edit" required name="Currentdtime">
+    <input type="text" placeholder="Enter The New Departure Time" required name="newdtime">
+   </div>
+   <div id="ff5">
+    <input type="text" placeholder="Enter Arrival Time You Want To Edit" required name="Currentatime">
+    <input type="text" placeholder="Enter The New Arrival Time" required name="newatime">
+   </div>
+   <button type="submit" id="fff">Submit</button>
+   </form>
+    </div>
+</body>
+</html>

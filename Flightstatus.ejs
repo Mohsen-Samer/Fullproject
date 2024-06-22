@@ -1,0 +1,41 @@
+<head>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/mystyle.css">
+    <script src="/Java/myscript.js"></script>
+    <title>Flight Status</title>
+</head>
+
+<body>
+   <header>
+        <a class="logo" >Blue Sky</a>
+        <nav class="headeritems">
+            <a href='index2'>Home</a>
+            
+        </nav>
+    </header>
+    <br><br>
+    <br>
+    <section class="Home" id="Home">
+    <div class="container">
+        <form class="form-group" action="../Routes/submitstatus" method="post" >
+        <h1 class="text-center">Airline Booking Form</h1>
+        <div id="form-booking">
+            <div class="row1">
+                <a href='index2' type="button" id="myBookingBtn">Booking Form</a>
+                <a href='myBooking' type="button" id="myBookingBtn">My Booking</a>
+                <a href='Flightstatus' type="button" id="flightStatusBtn">Flight Status</a>
+            </div>
+        <div id="input4">
+            <br>
+        <label style="color: #ffffff;">Flight Status</label>
+        <br><br><br><br><br><br><br>
+        <input type="text" id="input-group1" placeholder="Flight Number" name="flightnumstatus">
+        <div id="empty-div" style="color: red;"></div>
+        <br><br><br><br><br><br><br>
+        <button type="submit" id="button-contact">Submit</button>
+        </div>
+        </form>
+        </div>
+    </section>

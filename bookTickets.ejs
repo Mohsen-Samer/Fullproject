@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/mystyle.css">
+    <script src="/Java/myscript.js"></script>
+    <title>Booking</title>
+</head>
+ <header style="top: 0;">
+        <a class="logo" href="#">Blue Sky</a>
+        <nav class="headeritems">
+            <a href='index2'>Home</a>
+        </nav>
+    </header>
+<body id="book-tickets">
+    <div style="margin-top: 100px;">
+        <h2 id="deee" style="color: black;">Tickets</h2>
+        <div id="tablee">
+            <table id="taa">
+                
+                    <tr id="trr">
+                        <th>Flight Number</th>
+                        <th>Origin</th>
+                        <th>Destination</th>
+                        <th>Departure Time</th>
+                        <th>Arrival Time</th>
+                        <th>Book</th>
+                    </tr>
+                
+                
+                    <% flights.forEach(flight => { %>
+                        <tr id="trt">
+                            <td><%= flight.addflightnumber %></td>
+                            <td><%= flight.addflightorigin %></td>
+                            <td><%= flight.addflightnumberdestination %></td>
+                            <td><%= flight.addflightdtime %></td>
+                            <td><%= flight.addflightatime %></td>
+                            <td><a href='planshape' type="button" id="bookTic">book</a></th>
+                        </tr>
+                    <% }) %>
+               
+            </table>
+        </div>
+    </div>
+</body>
+</html>
